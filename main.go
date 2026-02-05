@@ -180,7 +180,7 @@ func main() {
 		Net:  "udp",
 	}
 
-	fmt.Println("DNS server listening on 127.0.0.1:53")
+	fmt.Println("DNS server listening on 0.0.0.0:53")
 	if err := server.ListenAndServe(); err != nil {
 		panic(err)
 	}
